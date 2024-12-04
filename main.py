@@ -40,7 +40,7 @@ while True:
 
     elif choice == 4:
         phone = input("Enter the Contact Number you want to update: ")
-        print(f"Your entered number is {phone}!")
+        search_contact.search_contact(phone, contacts)
         update_contact.update_contact(phone, contacts)
 
     elif choice == 5:
