@@ -35,12 +35,12 @@ while True:
         if not contacts:
             print("No contacts available")
         else:
-            name = input("Enter the contact name to search: ")
-            search_contact.search_contact(name, contacts)
+            key = input("Enter the contact name or email address to search: ")
+            search_contact.search_contact(key, contacts)
 
     elif choice == 4:
         phone = input("Enter the Contact Number you want to update: ")
-        print(f"Your entered number is {phone}!")
+        search_contact.search_contact(phone, contacts)
         update_contact.update_contact(phone, contacts)
 
     elif choice == 5:

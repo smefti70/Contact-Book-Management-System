@@ -43,5 +43,5 @@ def update_contact(phone, contacts):
                 print("Invalid Choice. Please try again with valid choice.")
                 return
 
-    print("No such contact no found!")
+    print("No such contact found!")
     return
